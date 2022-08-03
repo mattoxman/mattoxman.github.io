@@ -2237,6 +2237,36 @@ input, select, textarea {
 				background-color: #18bfef;
 			}
 
+			#scroll {
+			    position:fixed;
+			    right:10px;
+			    bottom:10px;
+			    cursor:pointer;
+			    width:50px;
+			    height:50px;
+			    background-color:#000000;
+			    text-indent:-9999px;
+			    display:none;
+			    -webkit-border-radius:60px;
+			    -moz-border-radius:60px;
+			    border-radius:60px
+			}
+			#scroll span {
+			    position:absolute;
+			    top:50%;
+			    left:50%;
+			    margin-left:-8px;
+			    margin-top:-12px;
+			    height:0;
+			    width:0;
+			    border:8px solid transparent;
+			    border-bottom-color:#ffffff;
+			}
+			#scroll:hover {
+			    background-color:#18bfef;
+			    opacity:1;filter:"alpha(opacity=100)";
+			    -ms-filter:"alpha(opacity=100)";
+			}
 /* Form */
 
 	form {
@@ -2634,7 +2664,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			margin: 1rem 0;
 			width: 100%;
 		}
 
@@ -2838,7 +2868,7 @@ input, select, textarea {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2rem 0;
+		margin: 0 0 0rem 0;
 		padding-left: 1.25rem;
 	}
 
@@ -2851,7 +2881,11 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 	}
-
+	ul.a {
+		list-style: circle;
+		margin: 0 0 2rem 0;
+		padding-left: 1rem;
+	}
 		ul li {
 			padding-left: 0.5rem;
 		}
@@ -3565,13 +3599,13 @@ input, select, textarea {
 			pointer-events: auto;
 			border-style: solid;
 			border-color: #ffffff;
-			border-width: 5px !important;
+			border-width: 2px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;
+			font-weight: 500;
 			letter-spacing: 0.075em;
 			line-height: 1;
-			padding: 1rem 1.75rem;
+			padding: 0.5rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
 		}
